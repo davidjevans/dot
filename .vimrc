@@ -27,6 +27,8 @@ NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 "NeoBundle Plugins
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'vim-airline/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
 call neobundle#end()
 
 " Required:
