@@ -30,6 +30,7 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'christoomey/vim-tmux-navigator'
+NeoBundle 'nvie/vim-flake8'
 call neobundle#end()
 
 " Required:
@@ -49,4 +50,4 @@ set expandtab
 set shiftwidth=2
 set number
 
-
+autocmd BufWritePre * %s/\s\+$//e
