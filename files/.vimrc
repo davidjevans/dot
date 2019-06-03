@@ -41,13 +41,19 @@ filetype plugin indent on
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
-"Nerd Tree
+" Nerd Tree
 map <C-n> :NERDTreeToggle<CR>
 
-"Other vim settings
+" Color
+colorscheme Monokai
+
+" Tab size, tabs as spaces
 set tabstop=2
 set expandtab
 set shiftwidth=2
+
+" Show number lines
 set number
 
+" Clear trailing white space
 autocmd BufWritePre * %s/\s\+$//e
