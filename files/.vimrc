@@ -31,6 +31,8 @@ NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'christoomey/vim-tmux-navigator'
 NeoBundle 'nvie/vim-flake8'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'ycm-core/YouCompleteMe'
 call neobundle#end()
 
 " Required:
@@ -57,3 +59,6 @@ set number
 
 " Clear trailing white space
 autocmd BufWritePre * %s/\s\+$//e
+
+" Interpret snakefiles as python syntax
+autocmd BufNewFile,BufRead Snakefile set syntax=python
