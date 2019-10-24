@@ -60,5 +60,10 @@ set number
 " Clear trailing white space
 autocmd BufWritePre * %s/\s\+$//e
 
+" Code folding with space bar
+set foldmethod=indent
+set foldlevel=99
+nnoremap <space> za
+
 " Interpret snakefiles as python syntax
 autocmd BufNewFile,BufRead Snakefile set syntax=python
