@@ -33,6 +33,7 @@ NeoBundle 'christoomey/vim-tmux-navigator'
 NeoBundle 'nvie/vim-flake8'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'ycm-core/YouCompleteMe'
+NeoBundle 'pangloss/vim-javascript'
 call neobundle#end()
 
 " Required:
@@ -67,3 +68,4 @@ nnoremap <space> za
 
 " Interpret snakefiles as python syntax
 autocmd BufNewFile,BufRead Snakefile set syntax=python
+autocmd BufNewFile,BufRead *.snakefile set syntax=python
