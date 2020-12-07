@@ -57,3 +57,12 @@ imap jk <Esc>
 imap kj <Esc>
 vmap jk <Esc>
 vmap kj <Esc>
+
+" Code folding with space bar
+set foldmethod=indent
+set foldlevel=99
+nnoremap <space> za
+
+" Interpret snakefiles as python syntax
+autocmd BufNewFile,BufRead Snakefile set syntax=python
+autocmd BufNewFile,BufRead *.snakefile set syntax=python
