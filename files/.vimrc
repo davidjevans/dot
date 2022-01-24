@@ -55,8 +55,6 @@ nnoremap <C-f> :GFiles<Cr>
 " Map jk and kj to esc in insert and visual mode
 imap jk <Esc>
 imap kj <Esc>
-vmap jk <Esc>
-vmap kj <Esc>
 
 " Code folding with space bar
 set foldmethod=indent
