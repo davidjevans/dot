@@ -1,9 +1,8 @@
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
-
 
 call plug#begin('~/.vim/plugged')
 " Add or remove your Bundles here:
@@ -49,7 +48,6 @@ autocmd BufWritePre * %s/\s\+$//e
 nnoremap <silent><leader>1 :source ~/.vimrc \| :PlugInstall<CR>
 
 " Fuzzy search hotkeys
-nnoremap <C-g> :Ag<Cr>
 nnoremap <C-f> :GFiles<Cr>
 
 " Map jk and kj to esc in insert and visual mode
